@@ -1,0 +1,54 @@
+<style type="text/css">
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:#74cfbf ;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:  ;
+  color: white;
+}
+
+
+
+
+</style>
+
+<div class="topnav">
+  <a class="active" href="{% url 'index' %}">Home</a>
+  <a href="{% url 'about' %}">About</a>
+  <a href="{% url 'menu' %}">Menu</a>
+  <a href="{% url 'order' %}">Place an Order</a>
+  <a href="{% url 'contact' %}">Contact Us</a>
+  <a href="{% url 'dashboard' %}">Dashboard</a>
+  <a href="{% url 'logout' %}">Logout</a>
+
+</div>
+
+
+
+ 
