@@ -26,7 +26,7 @@ urlpatterns = [
     path('logout/', views.logoutUser, name="logout"),
     path('admin/', admin.site.urls),
     path('restaurant/', include('restaurant.urls')),
-    path('index/', Index.as_view(), name='index'),
+    path('index/', views.loginPage, name='login'),
     path('contact/',Contact.as_view(), name='contact'),
     path('about/', About.as_view(), name='about'),
     path('menu/', Menu.as_view(), name='menu'),
